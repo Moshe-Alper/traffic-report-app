@@ -2,16 +2,23 @@
 
 <main>
   <div id="dashboard">
-    <div class="dashboard-item">
-     <server-status />
-    </div>
+    <dashboard-item 
+      [image]="{src: 'status.png', alt: 'A single symbol'}" 
+      title="Server Status">
+      <server-status />
+    </dashboard-item>
 
-    <div class="dashboard-item">
-     <traffic />
-    </div>
+    <dashboard-item 
+      [image]="{src: 'globe.png', alt: 'A globe'}" 
+      title="Traffic">
+      <traffic />
+    </dashboard-item>
 
-    <div class="dashboard-item">
+    <dashboard-item 
+      [image]="{src: 'list.png', alt: 'A list'}" 
+      title="Support Tickets">
       <tickets />
-    </div>
+    </dashboard-item>
   </div>
+
 </main>
